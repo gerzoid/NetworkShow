@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8447DF23-D450-4991-8502-E2F7B4870CF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetworkShow</RootNamespace>
+    <AssemblyName>NetworkShow</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBFShowLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\DBFShowLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PacketDotNet">
+      <HintPath>Dll\PacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpPcap">
+      <HintPath>Dll\SharpPcap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="Filters.cs" />
+    <Compile Include="Forms\FormAdapters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdapters.Designer.cs">
+      <DependentUpon>FormAdapters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormShowFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormShowFilters.Designer.cs">
+      <DependentUpon>FormShowFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\Grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Network\Enum.cs" />
+    <Compile Include="Network\NetworkBase.cs" />
+    <Compile Include="Network\PacketInfo.cs" />
+    <Compile Include="Network\Packets\ARPHeader.cs" />
+    <Compile Include="Network\Packets\EthernetHeader.cs" />
+    <Compile Include="Network\Packets\ICMPHeader.cs" />
+    <Compile Include="Network\Packets\IGMPHeader.cs" />
+    <Compile Include="Network\Packets\IPHeader.cs" />
+    <Compile Include="Network\Packets\IPv6Header.cs" />
+    <Compile Include="Network\Packets\TCPHeader.cs" />
+    <Compile Include="Network\Packets\UDPHeader.cs" />
+    <Compile Include="Network\SharpPcap\PcapClass.cs" />
+    <Compile Include="Network\SharpPcap\SharpPcap.cs" />
+    <Compile Include="Network\Sockets\RawSocket.cs" />
+    <Compile Include="Network\Sockets\SocketClass.cs" />
+    <Compile Include="Network\Structs.cs" />
+    <Compile Include="PacketParser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics.cs" />
+    <Compile Include="Structs.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Forms\FormAdapters.resx">
+      <DependentUpon>FormAdapters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormShowFilters.resx">
+      <DependentUpon>FormShowFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\network.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\add.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

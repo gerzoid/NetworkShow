@@ -1,0 +1,16 @@
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\bin\Release\NetworkShow.exe
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\bin\Release\NetworkShow.pdb
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\bin\Release\PacketDotNet.dll
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\bin\Release\SharpPcap.dll
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\N_etworkShow.Forms.FormAdapters.resources
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\NetworkShow.MainForm.resources
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\GenerateResource.read.1.tlog
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\GenerateResource.write.1.tlog
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\NetworkShow.exe
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\NetworkShow.pdb
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\NetworkShow.Properties.Resources.resources
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+E:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+e:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\bin\Release\NetworkShow.exe.config
+e:\Gerz\Проекты\SVN\NetworkShow\NetworkShow\bin\Release\DBFShowLib.dll
